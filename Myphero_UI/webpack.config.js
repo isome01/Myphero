@@ -21,9 +21,16 @@ module.exports = {
                 test : /\.css$/,
                 use : ["css-loader","style-loader"]
             }
+            
         ]
     },
-
+    devServer: {
+        port: 3000,
+        open: true,
+        proxy: {
+          "/api": "http://localhost:8080"
+        }
+    },
     plugins : [
         new HTMLWebpackPlugin({
             template : "./src/app/index.html",
