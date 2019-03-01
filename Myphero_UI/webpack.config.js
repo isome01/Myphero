@@ -1,6 +1,14 @@
+const path = require('path');
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 
+const outputDirectory = "dist";
+
 module.exports = {
+    entry : "./src/index.js",
+    output : {
+        path : path.join( __dirname, outputDirectory),
+        filename : "bundle.js"
+    },
     module : {
         /* Set rules for all jsx files to be compiled by babel loader */
         rules : [
@@ -34,7 +42,6 @@ module.exports = {
     plugins : [
         new HTMLWebpackPlugin({
             template : "./src/app/index.html",
-            filename : "./index.html"
         })
     ]
 };
