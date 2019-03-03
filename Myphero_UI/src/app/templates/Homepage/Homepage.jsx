@@ -36,10 +36,11 @@ class Homepage extends Component {
 
         let navbar_logo = 'Myphero'
         let navbar_content = [
-            {text : 'Home',},
-            {text : 'Services'},
-            {text : 'Communities'},
-            {text : 'About'},
+            {text : 'Home', route_path:'/'},
+            {text : 'Services', route_path:'/'},
+            {text : 'Communities', route_path:'/'},
+            {text : 'About', route_path:'/'},
+            {text : 'Login', route_path:'/Login'},
         ];
 
         return(

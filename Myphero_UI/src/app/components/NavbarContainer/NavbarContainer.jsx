@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 //import the navbar presentation
@@ -24,11 +25,16 @@ class NavbarContainer extends Component {
         return(
             <div id='myphero_navbar' className={'navbar-container'}>
                 <div className={'nav-header'}>
-                    <span className={'nav-logo'}><a href="#">{this.props.navbar_logo}</a></span>
+                    <NavLink to="/">
+                        <span className={'nav-logo'}><a href="#">{this.props.navbar_logo}</a></span>
+                    </NavLink>
                 </div>
                 <ul className={'nav-list-container'}>
                     {this.props.navbar_content.map( $_ =>{
-                        return <li key={$_.text} className={'nav-list-item'}><a href="#">{$_.text}</a></li>
+                        return (
+                        <NavLink to={$_.route_path}>
+                            <li key={$_.text} className={'nav-list-item'}><a>{$_.text}</a></li>
+                        </NavLink>)
                     })}
                 </ul>
             </div>

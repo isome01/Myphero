@@ -5,6 +5,7 @@ import SectionArticle from '../../presentational/SectionArticle.jsx';
 
 import './SectionContainer.css';
 
+
 class SectionContainer extends Component {
 
     constructor(props){
@@ -17,7 +18,8 @@ class SectionContainer extends Component {
 
     render(){
         
-        const articles = ['Sokka', 'Korah', 'Rainbow', 'Foo'];
+        let article_image = 'https://pm1.narvii.com/5791/6fd38e0e9de954c80231b51aa758500f4c6bdf25_hq.jpg'; 
+        let articles = ['Sokka', 'Korah', 'Rainbow', 'Foo'];
 
         return(
 
@@ -27,7 +29,7 @@ class SectionContainer extends Component {
                 <section id={this.props.section_category + '_section'}>{
                     articles.map( $_ => <SectionArticle 
                         article_header={'Toph and Sokka'} 
-                        artcile_image={'https://i.ytimg.com/vi/Vn30FvZMyWM/maxresdefault.jpg'} 
+                        artcile_image={article_image}
                         article_description={'Korrah and Sokka shipped by multitudes'}
                         article_summary={'Whoever thought such a comedic couple was ironically hard to guess. Korrah and Sokka dating might as well be canon, as the two are shipped by millions.'} 
                     />)

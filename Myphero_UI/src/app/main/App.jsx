@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Homepage from '../templates/Homepage/Homepage.jsx';
 import './App.css';
 
@@ -31,9 +31,15 @@ class App extends Component {
     
     render(){
         return(
-            <div id="app-root" className={'main'}>
-                <Homepage />
-            </div>
+            <BrowserRouter>
+                <div id="app-root" className={'main'}>
+                    <Switch>
+
+                        <Route path="/" component={Homepage} exact />
+                        
+                    </Switch>
+                </div>
+            </BrowserRouter>
         );
     }
 };
