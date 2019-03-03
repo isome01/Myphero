@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 //Import the main application
-import App from './app/App.jsx';
+import App from './app/main/App.jsx';
 
 const app_wrapper = document.getElementById('root');
 
