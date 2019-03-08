@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+/*import our page templates*/
 import Homepage from '../templates/Homepage/Homepage.jsx';
+import Loginpage from '../templates/Loginpage/Loginpage.jsx'
+import Errorpage from '../templates/Errorpage/Errorpage.jsx';
+
 import './App.css';
 
 class App extends Component {
@@ -34,9 +39,9 @@ class App extends Component {
             <BrowserRouter>
                 <div id="app-root" className={'main'}>
                     <Switch>
-
                         <Route path="/" component={Homepage} exact />
-                        
+                        <Route path="/Login" component={Loginpage}/>
+                        <Route component={Errorpage}/>
                     </Switch>
                 </div>
             </BrowserRouter>

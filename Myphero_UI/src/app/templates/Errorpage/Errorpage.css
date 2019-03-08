@@ -1,0 +1,12 @@
+.error-page{
+    margin: 5% 25%;
+    padding: 0;
+    max-height: 100%;
+    max-width : 100%;
+    background: white;
+    border: solid #ddd 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black; 
+}

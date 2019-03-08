@@ -14,6 +14,7 @@ class NavbarContainer extends Component {
         this.state = {
             navb_cont_title : ''
         };
+        
     }
 
     componentWillMount(){

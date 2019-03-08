@@ -1,0 +1,55 @@
+.login_container{
+    margin: 10% 33%;
+    padding:0;
+    position: relative;
+    min-width: 300px;
+    max-width: 100%;
+    min-height: 500px;
+    max-height: 100%;
+    border: solid #eee 2px;
+    background: white;
+    box-shadow: 5px 5px 5px gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-header{
+    margin: 5% 25% 10% 25%;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.form_group {
+    padding: 0px;
+    margin: auto;
+    max-width: 100%;
+
+}
+.form_group .form_label {
+    border: solid black 2px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+    width: 300px;
+    max-width: 100%;
+}
+
+.form_group .form_input{
+    padding: 20px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 100%;
+}
+
+.form_group .form_button{
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: powderblue;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+}
