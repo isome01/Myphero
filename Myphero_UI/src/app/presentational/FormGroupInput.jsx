@@ -17,7 +17,7 @@ const FormGroupInput = ({form_group_name, form_input_type, form_group_label}) =>
         </label>
         <input className={'form_input'} 
             name={form_group_name} 
-            id={form_group_name+'_input'} 
+            id={form_group_label+'_input'} 
             type={form_input_type}
             placeholder={form_input_type}/>
     </div>

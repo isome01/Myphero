@@ -9,7 +9,7 @@ For styling:
 
 const FormGroupButton = ({form_group_name, form_button_type, form_button_text}) => (
 
-    <div className={form_group_name+'_form_group'}>
+    <div className={'form_group'}>
         <button className={'form_button'} 
             name={form_group_name+'_input'} 
             id={form_button_text+'_button'} 

@@ -14,6 +14,10 @@ class LoginContainer extends Component {
         this.SubmitForm = this.SubmitForm.bind(this);
     }
 
+    SubmitForm = () => {
+        
+    }
+
     componentWillMount = () => {
 
         this.props.form_content = this.props.form_content ||  {
@@ -42,7 +46,7 @@ class LoginContainer extends Component {
 
         return(
             <div className="login_container">
-                <form id="login_form" onSubmit={false} autoComplete='on'>
+                <form method="POST" id="login_form" onSubmit={false} autoComplete='on'>
                     <h2 className="login_header"> Login </h2>
                     
                     <hr/>

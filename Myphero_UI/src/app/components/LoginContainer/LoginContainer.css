@@ -26,12 +26,11 @@
 
 }
 .form_group .form_label {
-    border: solid black 2px;
     padding: 20px;
     margin: auto;
     text-align: center;
     font-size: 1rem;
-    display: block;
+    display: inline-block;
     width: 300px;
     max-width: 100%;
 }
@@ -41,6 +40,7 @@
     margin: auto;
     display: block;
     box-sizing: border-box;
+    font-size: 1rem;
     width: 300px;
     max-width: 100%;
 }
@@ -48,8 +48,12 @@
 .form_group .form_button{
     box-sizing: border-box;
     border-radius: 15px;
+    padding: 20px;
+    margin: auto;
     background: powderblue;
     color: white;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     display: block;
+    width: 278px;
+
 }

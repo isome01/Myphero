@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, browserHistory } from 'react-router-dom';
 
 /*import our page templates*/
 import Homepage from '../templates/Homepage/Homepage.jsx';
