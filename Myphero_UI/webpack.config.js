@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const outputDirectory = "dist";
 
 module.exports = {
-    entry : "./src/index.js",
+    entry : "./src/app/index.js",
     output : {
         path : path.join( __dirname, outputDirectory),
         filename : "bundle.js"
@@ -26,10 +26,13 @@ module.exports = {
                 }]
             },
             {
-                test : /\.css$/,
+                test : /\.(css)$/,
                 use : ["style-loader","css-loader"] /* make sure to include style-loader first */
+            },
+            {
+                test: /\.(jpg|png|svg|jpeg|PNG|JPG|SVG|JPEG)$/
             }
-            
+
         ]
     },
     devServer: {
