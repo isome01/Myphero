@@ -1,0 +1,50 @@
+.modal-backdrop {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+
+.modal-backdrop:focus {
+    opacity: 75%;
+}
+
+.modal {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding-top: 100px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: solid #eee 2px;
+    padding: 25px;
+}
+
+.modal-header {
+    font-size: 1.5rem;
+}
+
+.modal-close {
+    font-size: 1.5rem;
+    transition: font-weight 1s;
+    color: gray;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.modal-close:hover {
+
+}
+
+.modal-body {
+
+}

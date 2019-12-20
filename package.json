@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "webpack-dev-server --mode development",
-    "backend": "nodemon ./server/backend",
+    "build": "webpack --mode development",
+    "client": "webpack --mode development && webpack-dev-server --mode development",
+    "backend": "nodemon ./dist/server.bundle.js",
     "start": "concurrently \"npm run client\" \"npm run backend\""
   },
   "keywords": [],
@@ -41,8 +42,13 @@
     "immutable": "^4.0.0-rc.12",
     "jquery": "^3.4.1",
     "mongo": "^0.1.0",
+    "mongodb": "^3.4.0",
     "node": "^13.3.0",
     "react": "^16.12.0",
-    "webpack-dev-server": "^3.9.0"
+    "react-toastify": "^5.4.1",
+    "source-map-support": "^0.5.16",
+    "use-global-hook": "^0.1.12",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-node-externals": "^1.7.2"
   }
 }

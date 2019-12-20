@@ -1,0 +1,25 @@
+.label-input {
+    max-width: 500px;
+    margin-top: 20px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.invalid {
+    border: solid #f00 2px;
+    color: #000;
+    background-color: #ffcccc;
+}
+
+.btn-disabled {
+    cursor: not-allowed;
+    background: gray;
+}
+
+.error-msg {
+    background-color: #ffcccc;
+    border: solid #ff0000 1px;
+    color: #f00;
+    float: right;
+}

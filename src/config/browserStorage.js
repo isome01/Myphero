@@ -10,4 +10,12 @@ browserStorage.set = (item, data) => {
   localStorage.setItem(`${item}`, data || '')
 }
 
+browserStorage.clear = () => {
+  localStorage.clear()
+}
+
+browserStorage.remove = item => {
+  localStorage.removeItem(`${item}`)
+}
+
 export default browserStorage
