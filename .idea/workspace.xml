@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98de73ee-1d19-49ef-9566-11869e8adfe3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/js/dbdriver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/js/obj/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/js/obj/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/js/validators/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/user/bl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/user/dal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/user/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/user/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/CreateUser/CreateUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/CreateUser/CreateUser.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/CreateUser/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/Login.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Login/validators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Navigation/components/MainNavbar/MainNavbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/SessionOrganizerDash/SessionOrganizer/Organizer/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/common/Modal/Modal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/common/Modal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/navigationConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/backend/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/SessionOrganizerDash/SessionOrganizer/Organizer/Organizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/SessionOrganizerDash/SessionOrganizer/Organizer/Organizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/assets/grey-white-checkered-squares.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/grey-white-checkered-squares.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/assets/myphero_background_concept.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/myphero_background_concept.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/assets/toph_and_sokka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/toph_and_sokka.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/common/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Navigation/components/MainNavbar/MainNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/common/Navbar/Navbar.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/common/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Navigation/components/MainNavbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/browserStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/browserStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,82 +17,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Login/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Login/CreateUser/CreateUser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-636">
-              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-                <element signature="e#2623#2782#0" />
-                <element signature="e#3501#4122#0" />
-                <element signature="e#3601#4115#0" />
-                <element signature="e#4537#4803#0" />
-                <element signature="e#3477#3714#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Login/api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/user/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/user/bl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#81#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/routes/user/dal.js">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <element signature="e#617#732#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -214,7 +97,6 @@
         <option value="$PROJECT_DIR$/src/app/Login/Login.module.css" />
         <option value="$PROJECT_DIR$/src/app/common/Modal/Modal.module.css" />
         <option value="$PROJECT_DIR$/src/app/Login/CreateUser/index.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/app/hooks/index.js" />
         <option value="$PROJECT_DIR$/src/app/common/Modal/index.js" />
         <option value="$PROJECT_DIR$/src/config/index.js" />
@@ -238,6 +120,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/routes/user/bl.js" />
         <option value="$PROJECT_DIR$/server/routes/user/user.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -267,25 +150,7 @@
             <path>
               <item name="Myphero" type="b2602c69:ProjectViewProjectNode" />
               <item name="Myphero" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myphero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myphero" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myphero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myphero" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myphero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myphero" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Myphero" type="b2602c69:ProjectViewProjectNode" />
@@ -297,21 +162,6 @@
               <item name="Myphero" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myphero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myphero" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Myphero" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Myphero" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateUser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,12 +225,12 @@
       <workItem from="1575129934293" duration="22214000" />
       <workItem from="1575428017167" duration="1490000" />
       <workItem from="1575429522270" duration="67317000" />
-      <workItem from="1576335107885" duration="67273000" />
+      <workItem from="1576335107885" duration="67907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158294000" />
+    <option name="totallyTimeSpent" value="158928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1937" height="732" extended-state="0" />
@@ -428,13 +278,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/SessionOrganizerDash/SessionOrganizer/Organizer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/backend/js/obj/index.js" />
     <entry file="file://$PROJECT_DIR$/server/backend/js/obj/user.js" />
     <entry file="file://$PROJECT_DIR$/server/backend/index.js" />
@@ -561,13 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="35" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -773,12 +609,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/user/dal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
             <element signature="e#617#732#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

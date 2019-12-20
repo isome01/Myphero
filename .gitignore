@@ -4,3 +4,4 @@ dist
 yarn-error.lock
 dist/*
 workspace.xml
+package-lock.json
