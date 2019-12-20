@@ -1,0 +1,12 @@
+.organizer {
+    background-color: #fff;
+    border: solid #eee 2px;
+    box-sizing: content-box;
+    box-shadow: #000 5px 5px 5px;
+}
+
+table > tbody > tr> td {
+    box-sizing: content-box;
+    background-color: #ddd;
+    border: solid #ccc 1px;
+}
