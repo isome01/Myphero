@@ -4,4 +4,59 @@
     border: solid #eee 1px;
     box-shadow: gray 2px 2px 2px;
     margin-top: 100px;
+    min-height: 320px;
+}
+
+.label-input {
+    max-width: 500px;
+    margin-top: 20px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.invalid {
+    border: solid #f00 2px;
+    padding: 10px;
+    color: #000;
+    background-color: #ffcccc;
+}
+
+.btn-disabled {
+    cursor: not-allowed;
+    background: gray;
+}
+
+.error-msg {
+    background-color: #ffcccc;
+    border: solid #ff0000 1px;
+    color: #f00;
+    float: right;
+    padding: 15px;
+}
+
+.success-msg {
+    background-color: #ccffcc;
+    border: solid #004400 1px;
+    color: #004400;
+    float: right;
+    padding: 15px;
+}
+
+.login-inputs {
+    padding: 10px;
+    border: solid #ccc 1px;
+    border-radius: 5px;
+}
+
+.create-account-link {
+    -webkit-align-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 570px) {
+    .login-form {
+        min-width: 500px;
+    }
 }

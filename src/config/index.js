@@ -1,4 +1,6 @@
 import {fromJS} from 'immutable'
+import browserStorage from './browserStorage'
+import ajax from './ajax'
 
 const appEssentials = fromJS({
   siteUrl: `${process.env.PROTOCOL}://${process.env.CLIENT_DOMAIN}:${process.env.CLIENT_PORT}`,
@@ -6,3 +8,9 @@ const appEssentials = fromJS({
 })
 
 export default appEssentials
+
+export {
+  appEssentials,
+  browserStorage,
+  ajax
+}

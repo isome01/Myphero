@@ -1,5 +1,5 @@
 import dbDriver from '../../js/dbdriver'
-import user from '../../js/obj/user'
+import {returnObj, user} from '../../js/obj'
 
 const dal = {}
 
@@ -7,40 +7,64 @@ dal.createUser = values => (
   dbDriver()
     .then(
       db => (
-        db.collection('user').insertOne({...values})
+        db.collection('user').insertOne({
+          ...values,
+          created: `${new Date()}`
+        })
           .then(res => {
             console.log(res.result)
             if (res.result.n === 1) {
-              return {message: res.ops.username, success: true}
+              return returnObj(
+                'Account created successfully!',
+                {...res.ops},
+                true
+              )
             }
-            return {message: 'Account was unable to be updated.', success: false}
+            return returnObj('Account was unable to be updated.')
           })
-          .catch(err => {
-            console.log(err)
-            return ({message: 'Unable to created account.', success: false})
-          })
-    ))
-    .catch(err => new Error(err))
+      ))
+    .catch(err => returnObj(new Error(err)))
 )
 
-dal.getUser = user => {
+dal.getUser = (username, field = 'username') => {
+  console.log('in the DAL:', username, field)
   return dbDriver()
     .then(
       db => (
-        db.collection('user').find(user._id)
+        db.collection('user').findOne({[`${field}`]: `${username.toLowerCase()}`})
+          .then(res => {
+            if (typeof (res) === 'object') {
+              return returnObj(
+                '',
+                user(res),
+                true
+              )
+            } else
+              return returnObj(
+                '',
+                {},
+                false
+            )
+          })
+          .catch(err => returnObj(`Unable to get user error: ${err}`, false))
       ))
-    .catch()
 }
 
 dal.getAllAccountNames = () => {
   return dbDriver()
     .then(
       db => db.collection('user').find({}).toArray().then(
-        results => (results || []).map(res => res.username)
+        results => {
+          return returnObj(
+            '',
+            (results || []).map(res => res.username),
+            true
+          )
+        }
       )
     )
     .catch(
-      err => `Unable to retrieve all account names; Error: ${err}`
+      err => returnObj(`Unable to retrieve all account names; Error: ${err}`)
     )
 }
 
@@ -48,11 +72,17 @@ dal.getAllEmailIds = () => {
   return dbDriver()
     .then(
       db => db.collection('user').find({}).toArray().then(
-        results => (results || []).map(res => res.emailId)
+        results => {
+          return returnObj(
+            '',
+            (results || []).map(res => res.emailId),
+            true
+          )
+        }
       )
     )
     .catch(
-      err => `Unable to retrieve all email ids; Error: ${err}`
+      err => returnObj(`Unable to retrieve all email ids; Error: ${err}`)
     )
 }
 
