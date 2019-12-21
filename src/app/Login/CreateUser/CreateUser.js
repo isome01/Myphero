@@ -9,13 +9,13 @@ import {
 } from '../validators'
 import {
   createNewUser,isUsernameAvailable, isEmailAvailable} from '../api'
-import {toast} from 'react-toastify'
-import * as styles from './CreateUser.module.css'
+import * as styles from '../Login.module.css'
 
-const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, className}) => {
+const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, className, resetForm}) => {
   /* create user vars */
   const [modal, showModal] = React.useState(false)
   const [errorMsg, setErrorMsg] = React.useState('')
+  const [successMsg, setSuccessMsg] = React.useState('')
   const [validPassword, setValidPassword] = React.useState(true)
   const [validUsername, setValidUsername] = React.useState(true)
   const [validEmailId, setValidEmailId] = React.useState(true)
@@ -42,7 +42,12 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
       .then(res => {
         if (res.success) {
           setInitialValues({username: res.username, password: ''})
-          setTimeout(() => showModal(false), 1000)
+          setSuccessMsg(res.message)
+          setTimeout(() => {
+            setSuccessMsg('')
+            resetForm()
+            showModal(false)
+          }, 1000)
         } else {
           setErrorMsg(`${res.message}`)
         }
@@ -51,7 +56,7 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
         toast.error(err)
         console.log(err)
       })
-  }, [currentValues, setErrorMsg, isFormValid, showModal, errorMsg])
+  }, [currentValues, setErrorMsg, isFormValid, showModal, errorMsg, setSuccessMsg])
 
   //initialize
   React.useEffect(() => {
@@ -152,7 +157,7 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
               type='input'
               onChange={e => setValue('emailId', e.target.value)}
               value={currentValues.get('emailId', '')}
-              className={`col-sm-9 ${!validEmailId ? invalidClass : ''}`}
+              className={`col-sm-9 login-inputs ${!validEmailId ? invalidClass : ''}`}
               required
             />
           </div>
@@ -162,7 +167,7 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
               type='input'
               onChange={e => setValue('confirmEmail', e.target.value)}
               value={currentValues.get('confirmEmail', '')}
-              className='col-sm-9'
+              className='col-sm-9 login-inputs'
               required
             />
           </div>
@@ -172,7 +177,7 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
               type='input'
               onChange={e => setValue('username', e.target.value)}
               value={currentValues.get('username', '')}
-              className={`col-sm-9 ${!validUsername ? invalidClass : ''}`}
+              className={`col-sm-9 login-inputs ${!validUsername ? invalidClass : ''}`}
               required
             />
           </div>
@@ -182,7 +187,7 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
               type='password'
               onChange={e => setValue('password', e.target.value)}
               value={currentValues.get('password', '')}
-              className={`col-sm-9 ${!validPassword ? invalidClass : ''}`}
+              className={`col-sm-9 login-inputs ${!validPassword ? invalidClass : ''}`}
               required
             />
           </div>
@@ -192,12 +197,13 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
               type='password'
               onChange={e => setValue('confirmPassword', e.target.value)}
               value={currentValues.get('confirmPassword', '')}
-              className='col-sm-9'
+              className='col-sm-9 login-inputs'
               required
             />
           </div>
-          <div className='label-input col-sm-6' style={{padding: 20}}>
+          <div className='label-input col-sm-6 col-xs-12' style={{padding: 20}}>
             <button
+              type='submit'
               className='btn btn-primary'
               onClick={onSubmit}
               disabled={currentValues.equals(initialValues)}
@@ -210,17 +216,23 @@ const CreateUser = ({currentValues, setValue, initialValues, setInitialValues, c
               <p className={errorMsg ? 'error-msg' : ''}>
                 {errorMsg}
               </p>
+              <p className={successMsg ? 'success-msg' : ''}>
+                {successMsg}
+              </p>
             </div>
           </div>
         </Modal>
       }
-      <button
-        type='button'
-        onClick={() => showModal(true)}
-        className={`btn btn-primary ${className}`}
+      <a
+        onClick={() => {
+          resetForm()
+          showModal(true)
+        }}
+        className={`create-account-link ${className}`}
+        href='#'
       >
         (Not a member?) Sign Up
-      </button>
+      </a>
     </Fragment>
   )
 }
@@ -230,11 +242,13 @@ CreateUser.propTypes = {
   initialValues: PropTypes.instanceOf(Map).isRequired,
   setValue: PropTypes.func.isRequired,
   setInitialValues: PropTypes.func.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  resetForm: PropTypes.func
 }
 
 CreateUser.defaultProps = {
   className: '',
+  resetForm: () => {}
 }
 
 export default CreateUser

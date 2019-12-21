@@ -1,3 +1,9 @@
 {
-    "watch": ["src/server/backend/"]
+    "restartable": "rs",
+    "watch": [
+        "server/index.js",
+        "server/routes/",
+        "server/routes/user",
+        "dist/server.bundle.js"
+    ]
 }

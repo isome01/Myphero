@@ -6,7 +6,7 @@ const port = process.env.BACKEND_PORT || 5001
 
 const ajax = axios.create({
   baseURL: `${protocol}://${domain}:${port}`,
-  timeout: 1000,
+  timeout: 8000,
   headers: {'Accept':'*/*', 'Content-Type':'application/json'}
 })
 
