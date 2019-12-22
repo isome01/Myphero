@@ -46,6 +46,8 @@ const clientConfig = {
         ]
     },
     devServer: {
+        host: env.CLIENT_DOMAIN,
+        disableHostCheck: true,
         port: env.CLIENT_PORT,
         open: false,
         historyApiFallback: true
