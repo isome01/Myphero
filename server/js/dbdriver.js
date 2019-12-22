@@ -6,16 +6,18 @@ const DB = process.env.DB_NAME
 const user = process.env.DB_USER
 const pwd = process.env.DB_PWD
 
-const config = {...(process.env.DB_CONFIG)}
+const config = {
+  urlParser: true,
+  useUnifiedTopology: true,
+  ssl: false
+}
 
 const url = encodeURI(`${PROTOCOL}://${user}:${pwd}@${DOMAIN}:${PORT}/${DB}`)
 
-const dbDriver = (() => {
-  console.log(url, config)
-  return (
-  MongoClient.connect(url, config)
+const dbDriver = () => (
+  MongoClient.connect(url, {...config})
     .then(client => client.db(DB))
     .catch(err => `There's been an error: ${err}`)
-)})
+)
 
 export default dbDriver
