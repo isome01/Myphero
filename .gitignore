@@ -3,5 +3,5 @@ node_modules
 dist
 yarn-error.lock
 dist/*
-workspace.xml
+.idea/*
 package-lock.json

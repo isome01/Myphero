@@ -51,10 +51,12 @@ dal.getUser = (username, field = 'username') => {
 }
 
 dal.getAllAccountNames = () => {
+  console.log('Accessing account information...')
   return dbDriver()
     .then(
       db => db.collection('user').find({}).toArray().then(
         results => {
+          console.log('hello?')
           return returnObj(
             '',
             (results || []).map(res => res.username),
